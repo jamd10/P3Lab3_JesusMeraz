@@ -5,7 +5,7 @@
 #include <stdio.h>
 using namespace std;
 int menu();
-int* ejercicio1(int*, int);
+int* ejercicio1(int*&, int);
 bool ejercicio2(string, string);
 void ejercicio3();
 int main(int argc, char** argv) {
@@ -78,7 +78,7 @@ int menu(){
 	cin>> opcion;
 	return opcion;
 }
-int* ejercicio1(int* arreglo, int size){
+int* ejercicio1(int*& arreglo, int size){
 	int contador = 0;
 	int posMayor, posMenor;
 	int* ordenado = new int[size];
@@ -155,8 +155,7 @@ void ejercicio3(){
 		player1[i] = arreglo[num1];
 		cout<<"Jugador 1 escoje: "<<num1<<endl;
 		cout<<"obtiene "<<arreglo[num1]<<endl;
-		
-		
+	
 		
 		// player2
 	
@@ -168,7 +167,7 @@ void ejercicio3(){
 				cin>>num2;
 			}
 		}
-		repetidos[i] = num2;
+		repetidos[i+1] = num2;
 		suma2 += arreglo[num2];
 		player2[i] = arreglo[num2];
 		cout<<"Jugador 2 escoje: "<<num2<<endl;
