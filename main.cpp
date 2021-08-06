@@ -36,12 +36,14 @@ int main(int argc, char** argv) {
 			}
 							
 			case 2:{
+				
 				string palabra1, palabra2;
 				cin.ignore();
 				cout<<"Ingrese la primera palabra: "<<endl;
 				getline(cin,palabra1);
 				cout<<"Ingrese la segunda palabra: "<<endl;
 				getline(cin,palabra2);
+				// retorno
 				bool flag = ejercicio2(palabra1, palabra2);
 				if(flag == true){
 					cout<<palabra1<<", "<<palabra2<<" = True"<<endl;
