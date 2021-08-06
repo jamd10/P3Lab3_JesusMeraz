@@ -161,8 +161,8 @@ void ejercicio3(){
 	
 		cout<<"Jugador 2 ingrese un numero: "<<endl;
 		cin>>num2;
-		for(int j = 0; j < size; j++){
-			while(repetidos[j] == num2){
+		for(int j = 0; j <= size; j++){
+			while(repetidos[j+1] == num2){
 				cout<<"Ese numero ya ha sido escojido, intente nuevamene: "<<endl;
 				cin>>num2;
 			}
