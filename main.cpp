@@ -174,7 +174,7 @@ void ejercicio3(){
 		cout<<"Jugador 2 escoje: "<<num2<<endl;
 		cout<<"obtiene "<<arreglo[num2]<<endl;
 		
-		// rondas
+		// rondas de jugadores
 		
 		cout<<"Ronda "<< i+1 << " PTS J1: "<<suma1<<" <-> PTS J2: "<<suma2<<endl;
 	}
